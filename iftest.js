@@ -1,6 +1,6 @@
 var readline = require('readline');
 var util = require('util');
-var RL = readline.createInterface(proces.stdin, process.stout);
+var RL = readline.createInterface(process.stdin, process.stdout);
 
 RL.question('What is your name? ', (name)=>{
   //Set up the prompt
