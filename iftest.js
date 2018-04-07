@@ -11,10 +11,10 @@ RL.question('What is your name? ', (name)=>{
   RL.on('line', (age)=>{
 
     if (age<18){
-      util.log(`${name.trim()} because you are ${age} years old, you can't enter.`);
+      util.log(`Hi ${name.trim()} because you are ${age} years old, you can't use PornHub.`);
       RL.close();
     }else{
-      util.log(`${name.trim()} you are ${age} years old, you can enter.`);
+      util.log(`Hi ${name.trim()} , those that are ${age} years old may enter. Welcome to PornHub!`);
       RL.close();
     }
   });
@@ -22,5 +22,5 @@ RL.question('What is your name? ', (name)=>{
 
 
 
-//Now go to the terminal, type 'node', then 'node iftest.js'
+//Now go to the terminal, cd jspractice, then '$ node iftest.js'
 //You should receive a prompt to enter you name and age.
