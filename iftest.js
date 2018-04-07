@@ -22,5 +22,5 @@ RL.question('What is your name? ', (name)=>{
 
 
 
-//Now go to the terminal, type 'node', then 'node interfacetest.js'
+//Now go to the terminal, type 'node', then 'node iftest.js'
 //You should receive a prompt to enter you name and age.
