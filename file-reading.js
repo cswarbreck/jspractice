@@ -10,6 +10,8 @@ fs.readdir('./', (err, content)=>{
 
 fs.readFile('global.html', 'UTF-8', (err, content)=>{
 
+    //encoding (UTF-8) must be included otherwise a buffer class will be output instead
+
     console.log(content);
 
 });
