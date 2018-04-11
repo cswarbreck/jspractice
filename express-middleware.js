@@ -1,5 +1,22 @@
-<!DOCTYPE HTML>
-<HTML>
+const express = require('express');
+let app = express();
+const port = process.env.PORT || 9999;
+
+app.use('/css', express.static(__dirname + '/public'));
+
+app.use('/css', (req, res, next)=>{
+
+    console.log('Middleware');
+
+    next();
+});
+
+app.get('/', (req, res)=>{
+
+    res.send(`
+    
+    <!DOCTYPE HTML>
+    <HTML>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width-device-width", user-scalable=no>
@@ -17,3 +34,13 @@
     </body>
 
 </HTML>
+    
+    
+    `);
+
+    res.send('HOME');
+});
+
+app.listen(port);
+
+console.log("Who stole the cookies from the Middleware?");
