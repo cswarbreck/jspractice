@@ -1,5 +1,9 @@
 const express = require('express');
 
-let app = express();
+const port = process.env.PORT || 9999;
 
-app.listen(3000);
+
+
+app.listen(port);
+
+console.log("It's ALIVE!");
