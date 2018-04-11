@@ -1,0 +1,23 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "example app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cswarbreck/jspractice.git"
+  },
+  "author": "cosmo swarbreck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cswarbreck/jspractice/issues"
+  },
+  "homepage": "https://github.com/cswarbreck/jspractice#readme",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
